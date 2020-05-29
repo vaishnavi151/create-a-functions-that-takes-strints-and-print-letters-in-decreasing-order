@@ -1,0 +1,16 @@
+#TO CREATE A FUNCTION THAT TAKES STRING AND PRINTS THE LETTERS IN DECREASING ORDER
+
+def most_frequent(str1):
+    dict = {}
+    for n in str1:
+        keys = dict.keys()
+        if n in keys:
+            dict[n] += 1
+        else:
+            dict[n] = 1
+    return dict
+print(most_frequent('mississippi'))
+
+OUTPUT
+
+{'m': 1, 'i': 4, 's': 4, 'p': 2}
